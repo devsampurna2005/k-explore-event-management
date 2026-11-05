@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover and register for inspiring events with Gather." />
+  <title>Gather — Find Your Next Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Gather home"><span class="brand-mark">g</span> gather<span class="brand-dot">.</span></a>
+      <div class="nav-links">
+        <a href="#events">Explore events</a>
+        <a href="#about">About</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+      <a class="nav-cta" href="#events">Find an event <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Make room for something memorable</div>
+        <h1>Good things happen<br>when we <em>gather.</em></h1>
+        <p>Discover experiences that spark ideas, create connections, and turn ordinary days into stories worth telling.</p>
+        <div class="hero-actions">
+          <a href="#events" class="button button-primary">Explore events <span>↗</span></a>
+          <a href="#about" class="text-link">How it works <span>→</span></a>
+        </div>
+        <div class="social-proof">
+          <div class="avatar-stack"><span>👩🏽</span><span>👨🏻</span><span>👩🏼</span><span>👨🏾</span></div>
+          <div><strong>2,400+</strong><small>people found their people</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image" role="img" aria-label="People enjoying a creative community event"></div>
+        <div class="floating-card float-top"><span class="float-icon">✦</span><div><strong>Meet your people</strong><small>Real moments, real connections</small></div></div>
+        <div class="floating-card float-bottom"><span class="calendar-icon">▦</span><div><strong>12 events this month</strong><small>There's something for everyone</small></div></div>
+        <div class="hero-sticker">YOUR<br>NEXT<br><b>STORY</b> <span>↘</span></div>
+      </div>
+    </section>
+
+    <section class="event-section" id="events">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">Curated for curious minds</div><h2>Find your next <em>favorite.</em></h2></div>
+          <a class="text-link desktop-link" href="#eventGrid">View all events <span>→</span></a>
+        </div>
+        <div class="event-tools">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search events, places..." aria-label="Search events"></label>
+          <div class="category-filters" id="categoryFilters" aria-label="Filter events by category">
+            <button class="filter-chip active" data-category="All">All events</button>
+            <button class="filter-chip" data-category="Technology">Technology</button>
+            <button class="filter-chip" data-category="Art & Culture">Art & Culture</button>
+            <button class="filter-chip" data-category="Wellness">Wellness</button>
+            <button class="filter-chip" data-category="Community">Community</button>
+          </div>
+        </div>
+        <div class="event-grid" id="eventGrid">
+          <article class="event-card" data-category="Technology" data-search="creative tech summit technology innovation workshop">
+            <div class="event-cover cover-tech"><span class="event-tag">Technology</span><span class="cover-symbol">⌘</span></div>
+            <div class="event-content"><div class="event-date"><span>JUN</span><strong>14</strong></div><div class="event-info"><h3>Creative Tech Summit</h3><p>Ideas, innovation, and the future of making.</p><div class="event-meta"><span>◷ 10:00 AM</span><span>⌖ The Foundry</span></div></div></div>
+            <button class="event-register" data-event="Creative Tech Summit">View details <span>↗</span></button>
+          </article>
+          <article class="event-card" data-category="Art & Culture" data-search="art after hours gallery painting culture">
+            <div class="event-cover cover-art"><span class="event-tag">Art & Culture</span><span class="cover-symbol">✳</span></div>
+            <div class="event-content"><div class="event-date"><span>JUN</span><strong>18</strong></div><div class="event-info"><h3>Art After Hours</h3><p>A night of local art, music, and expression.</p><div class="event-meta"><span>◷ 6:30 PM</span><span>⌖ The Modern Gallery</span></div></div></div>
+            <button class="event-register" data-event="Art After Hours">View details <span>↗</span></button>
+          </article>
+          <article class="event-card" data-category="Wellness" data-search="slow sunday wellness yoga mindful">
+            <div class="event-cover cover-wellness"><span class="event-tag">Wellness</span><span class="cover-symbol">☼</span></div>
+            <div class="event-content"><div class="event-date"><span>JUN</span><strong>22</strong></div><div class="event-info"><h3>Slow Sunday</h3><p>Reset your mind with movement and mindfulness.</p><div class="event-meta"><span>◷ 8:00 AM</span><span>⌖ Garden Studio</span></div></div></div>
+            <button class="event-register" data-event="Slow Sunday">View details <span>↗</span></button>
+          </article>
+          <article class="event-card" data-category="Community" data-search="neighborhood table community food connection">
+            <div class="event-cover cover-community"><span class="event-tag">Community</span><span class="cover-symbol">♡</span></div>
+            <div class="event-content"><div class="event-date"><span>JUN</span><strong>27</strong></div><div class="event-info"><h3>The Neighborhood Table</h3><p>Good food and even better conversations.</p><div class="event-meta"><span>◷ 5:00 PM</span><span>⌖ Common House</span></div></div></div>
+            <button class="event-register" data-event="The Neighborhood Table">View details <span>↗</span></button>
+          </article>
+          <article class="event-card" data-category="Technology" data-search="design for tomorrow design technology workshop">
+            <div class="event-cover cover-design"><span class="event-tag">Technology</span><span class="cover-symbol">◈</span></div>
+            <div class="event-content"><div class="event-date"><span>JUL</span><strong>03</strong></div><div class="event-info"><h3>Design for Tomorrow</h3><p>Build thoughtful products with creative minds.</p><div class="event-meta"><span>◷ 11:00 AM</span><span>⌖ Studio 8</span></div></div></div>
+            <button class="event-register" data-event="Design for Tomorrow">View details <span>↗</span></button>
+          </article>
+          <article class="event-card" data-category="Art & Culture" data-search="indie sound sessions live music culture">
+            <div class="event-cover cover-music"><span class="event-tag">Art & Culture</span><span class="cover-symbol">♫</span></div>
+            <div class="event-content"><div class="event-date"><span>JUL</span><strong>09</strong></div><div class="event-info"><h3>Indie Sound Sessions</h3><p>Discover fresh sounds from independent artists.</p><div class="event-meta"><span>◷ 7:00 PM</span><span>⌖ The Side Stage</span></div></div></div>
+            <button class="event-register" data-event="Indie Sound Sessions">View details <span>↗</span></button>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No events match your search. Try another keyword or category.</p>
+      </div>
+    </section>
+
+    <section class="about-section container" id="about">
+      <div class="about-art"><div class="about-circle">✦</div><div class="about-note">Less scrolling.<br><strong>More living.</strong></div></div>
+      <div class="about-copy"><div class="eyebrow">A little more connection</div><h2>Life's better<br><em>in real life.</em></h2><p>Gather makes it easy to find experiences around you. Explore something new, meet people who get you, and make memories beyond the screen.</p><div class="about-points"><span>✓ Thoughtfully curated events</span><span>✓ Easy, secure registration</span><span>✓ A community that welcomes you</span></div></div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container newsletter-inner"><div><div class="eyebrow">A good thing in your inbox</div><h2>Don't miss the <em>moment.</em></h2><p>Get the latest events and little sparks of inspiration.</p></div><form id="newsletterForm" class="newsletter-form"><input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Your email address" required><button type="submit" class="button button-primary">Join the list <span>→</span></button></form></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark">g</span> gather<span class="brand-dot">.</span></a><p>Made for moments that matter.</p><span>© 2026 Gather Events</span></div></footer>
+
+  <div class="modal-backdrop" id="eventModal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <div class="modal-eyebrow">You're one step away</div><h2 id="modalTitle">Register for an event</h2><p id="modalDescription">Save your spot and we'll see you there.</p>
+      <form id="registrationForm" novalidate>
+        <label>Full name<input id="fullName" name="fullName" type="text" placeholder="Your name" required minlength="2"></label>
+        <label>Email address<input id="email" name="email" type="email" placeholder="you@example.com" required></label>
+        <label>Phone number<input id="phone" name="phone" type="tel" placeholder="10-digit phone number" required pattern="[0-9+() -]{10,16}"></label>
+        <label>Selected event<select id="selectedEvent" name="selectedEvent" required><option value="">Choose an event</option></select></label>
+        <p class="form-error" id="formError" role="alert"></p>
+        <button class="button button-primary submit-button" type="submit">Confirm registration <span>↗</span></button>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
